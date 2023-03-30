@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12" id="titulo">
+                <h3 >Calculadora Básica</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xs-12 col-sm-6 col-md-3 fundo-mod margem borda">
+                    
+                <div class="justify-content-center centro">
+                    
+                    <table class="table table-dark">
+                        <tr>                            
+                            <td colspan="4"><input type="text" name="PantLcd" id="PantLcd" class="col-xs-12 col-sm-12 col-md-12" disabled style="background-color: white;"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="7" class="btn btn-secondary mesmo-tamanho" onclick="boton(value);"/></td>
+                            <td><input type="button" value="8" class="btn btn-secondary mesmo-tamanho" onclick="boton(value);"/></td>
+                            <td><input type="button" value="9" class="btn btn-secondary mesmo-tamanho" onclick="boton(value);"/></td>
+                            <td><input type="button" value="/" class="btn btn-info mesmo-tamanho" onclick="operation(value);" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="4" class="btn btn-secondary mesmo-tamanho" onclick="boton(value);"/></td>
+                            <td><input type="button" value="5" class="btn btn-secondary mesmo-tamanho" onclick="boton(value);"/></td>
+                            <td><input type="button" value="6" class="btn btn-secondary mesmo-tamanho" onclick="boton(value);"/></td>
+                            <td><input type="button" value="*" class="btn btn-info mesmo-tamanho" onclick="operation(value);"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="1" class="btn btn-secondary mesmo-tamanho" onclick="boton(value);"/></td>
+                            <td><input type="button" value="2" class="btn btn-secondary mesmo-tamanho" onclick="boton(value);"/></td>
+                            <td><input type="button" value="3" class="btn btn-secondary mesmo-tamanho" onclick="boton(value);"/></td>
+                            <td><input type="button" value="-" class="btn btn-info mesmo-tamanho" onclick="operation(value);" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="0" class="btn btn-secondary mesmo-tamanho" onclick="boton(value);"/></td>
+                            <td><input type="button" value="=" class="btn btn-success mesmo-tamanho" onclick="btn_igual(value);"/></td>
+                            <td><input type="button" value="C" class="btn btn-danger mesmo-tamanho" onclick="reset(value);"/></td>
+                            <td><input type="button" value="+" class="btn btn-info mesmo-tamanho" onclick="operation(value);"/></td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
